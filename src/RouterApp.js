@@ -1,10 +1,8 @@
 import React from "react"
 import {Route} from 'react-router-dom'
-import App from "./App";
 import Weather from './Component/Weather';
-import Header from "./Header";
 
-const About =  () =>
+const About = () =>
     <div className="about">
         <h1>About</h1>
         <p className="aboutDesc">
@@ -17,21 +15,20 @@ const About =  () =>
     </div>;
 const Home = () =>
     <div className="home">
-        <Header/>
+
         <h1>Home</h1>
         <p className="homeDesc">
             Home 화면을 나타내는 Page 입니다.
         </p>
     </div>;
 
-const RouterApp = () =>{
-    const city = 'Daejeon';
-    return(
-    <div className="App">
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/weather" component={Weather} />
-    </div>
+const RouterApp = () => {
+    return (
+        <div className="App">
+            <Route exact path="/" component={Home}/>
+            <Route path="/about" component={About}/>
+            <Route path="/weather" component={Weather}/>
+        </div>
     )
-}
+};
 export default RouterApp;
