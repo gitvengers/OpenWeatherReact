@@ -27,9 +27,9 @@ class Weather extends React.Component {
         const {cities} = this.state;
         if (!cities) {
             return (
-                <div className="loading">
+                <div className="loading_wrapper">
                     <h1 className="listHeader"> Cities List </h1>
-                    loading...
+                    <p className="loading">Loading...</p>
                 </div>
             );
         }

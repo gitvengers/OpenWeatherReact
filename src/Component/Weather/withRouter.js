@@ -8,7 +8,7 @@ const List = props => {
 
     return (
         <div>
-            <div className="align_center">
+            <div className="citiList_wapper">
                 <h1 className="listHeader"> Cities List </h1>
                 <ul className="citiList">
                     {cities.map(item => (

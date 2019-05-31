@@ -1,10 +1,13 @@
 import React from 'react';
 import Icon from './Icon';
+
 const API_WEATHER = 'http://localhost:8080/weather-crawler/current-weathers/by-city-name';
+
 class TodayWeather extends React.Component {
     state = {
         weather: null
     };
+
     async componentDidMount() {
         const {cityId} = this.props.match.params;
         const api = `${API_WEATHER}/${cityId}`;
@@ -15,11 +18,16 @@ class TodayWeather extends React.Component {
             weather
         });
     }
+
     render() {
         const {cityId} = this.props.match.params;
         const {weather} = this.state;
         if (!weather) {
-            return <div>Loading...</div>;
+            return (
+                <div className="loading_wrapper">
+                    <p className="loading">Loading...</p>
+                </div>
+            );
         }
         const celsius = (weather.main.temp - 273.15).toFixed(2); // kelvin to celsius
         const weatherMain = weather.weather[0].main;
@@ -27,14 +35,17 @@ class TodayWeather extends React.Component {
         return (
             <div className="weather-today">
                 <h1> Current Weather </h1>
-                <h2 className="weather-city">{cityId}</h2>                <div className="weather-today-meta">
-                <h3 className="weather-main">{weatherMain}</h3>
-                <div className="weather-temp">{celsius}°</div>
-            </div>
+                <h2 className="weather-city">{cityId}</h2>
+                <div className="weather-today-meta">
+                    <h3 className="weather-main">{weatherMain}</h3>
+                    <div className="weather-temp">{celsius}°</div>
+                </div>
                 <div className="weather-image">
                     <Icon iconId={iconId}/>
                 </div>
             </div>
         );
     }
-}export default TodayWeather;
+}
+
+export default TodayWeather;
