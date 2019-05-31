@@ -2,6 +2,7 @@ import React from 'react'
 import {Link, Route, Switch, withRouter} from "react-router";
 import List from "./withRouter";
 import todayWeather from "./todayWeather";
+import './Weather.css';
 
 
 const API_CITIES = "http://localhost:8080/weather-crawler/available-cities";
