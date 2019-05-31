@@ -22,26 +22,6 @@ div{
   text-align: center;
 }
 
-.headerNavi{
-  width: auto;
-  display: flex;
-  justify-content: center;
-}
-.headerNavi a{
-  padding: 10px 20px ;
-  text-decoration: none;
-  font-size: 20px;
-  border-right: 1px solid black;
-  margin : 5px 0;
-  margin-right: 0;
-  color:black;
-
-}
-
-.headerNavi a:last-child{
-  border-right: none;
-}
-
 .citiList{
   display: flex;
   flex-wrap: wrap;

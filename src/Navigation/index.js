@@ -1,16 +1,19 @@
 import React from "react";
 import './Navigation.css';
 import {Link, NavLink} from "react-router-dom";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faHome, faAddressCard, faCloud} from '@fortawesome/free-solid-svg-icons'
 
-const Navigation = () =>{
+
+const Navigation = () => {
     return (
-        <div>
-                <div className="headerNavi">
-                    <Link to="/">Home</Link>
-                    <NavLink to="/about" activeClassName="selected">About</NavLink>
-                    <NavLink to="/weather" activeClassName="selected">Weather</NavLink>
-                </div>
+        <div className="header">
+            <div className="headerNavi">
+                <Link to="/"><FontAwesomeIcon icon={faHome} />Home</Link>
+                <NavLink to="/about" activeClassName="selected"><FontAwesomeIcon icon={faAddressCard} />About</NavLink>
+                <NavLink to="/weather" activeClassName="selected"><FontAwesomeIcon icon={faCloud} />Weather</NavLink>
+            </div>
         </div>
     )
 }
-export  default Navigation;
+export default Navigation;

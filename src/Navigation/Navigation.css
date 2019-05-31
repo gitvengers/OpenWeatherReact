@@ -1,0 +1,20 @@
+.header {
+    display: block;
+    background: #333333;
+}
+.headerNavi{
+    width: 1000px;
+    display: inline-block;
+
+}
+.headerNavi a{
+    display: inline-block;
+    padding: 15px 30px ;
+    text-decoration: none;
+    font-size: 20px;
+    margin : 5px 0;
+    color:#fff;
+}
+.headerNavi svg{
+    margin-right: 10px;
+}
