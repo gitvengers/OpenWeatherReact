@@ -2,20 +2,30 @@
     display: block;
     background: #333333;
 }
-.headerNavi{
+
+.headerNavi {
     width: 1100px;
-    margin : 0 auto;
+    margin: 0 auto;
     display: block;
 
 }
-.headerNavi a{
+
+.headerNavi a {
     display: inline-block;
-    padding: 15px 30px ;
+    padding: 13px 25px;
     text-decoration: none;
     font-size: 20px;
-    margin : 5px 0;
-    color:#fff;
+    margin: 7px 5px;
+    color: #fff;
+    transition: .5s;
+    position: relative;
 }
-.headerNavi svg{
+
+.headerNavi a:hover {
+    background: #f6490d;
+    border-radius: 5px;
+}
+
+.headerNavi svg {
     margin-right: 10px;
 }
