@@ -24,7 +24,7 @@ class Weather extends  React.Component{
         const {match} = this.props;
         const {cities} = this.state;
         if(!cities){
-            return <div>loading...</div>
+            return <div className="loading">loading...</div>
         }
         return (
             <Switch>
