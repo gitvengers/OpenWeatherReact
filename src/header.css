@@ -1,0 +1,15 @@
+#header .title {
+    margin: 0;
+    text-align: center;
+    background: #333333;
+    color: #fff;
+    display: inline-block;
+    height: 200px;
+    width: 100%;
+    line-height: 200px;
+    font-size: 50px;
+}
+#header .desc {
+    margin : 20px;
+    text-align: center;
+}

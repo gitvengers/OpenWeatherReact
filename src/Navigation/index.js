@@ -7,7 +7,7 @@ import {faHome, faAddressCard, faCloud} from '@fortawesome/free-solid-svg-icons'
 
 const Navigation = () => {
     return (
-        <div className="header">
+        <div className="headerNav_wrapper">
             <div className="headerNavi">
                 <Link to="/" id="Home"><FontAwesomeIcon icon={faHome} />Home</Link>
                 <NavLink to="/about" id="About" activeClassName="selected"><FontAwesomeIcon icon={faAddressCard} />About</NavLink>

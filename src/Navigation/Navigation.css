@@ -1,10 +1,11 @@
-.header {
+.headerNav_wrapper {
     display: block;
     background: #333333;
 }
 .headerNavi{
     width: 1000px;
-    display: inline-block;
+    margin : 0 auto;
+    display: block;
 
 }
 .headerNavi a{

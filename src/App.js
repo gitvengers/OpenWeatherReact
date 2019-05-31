@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './header.css'
 import Header from './Header';
 import {BrowserRouter} from "react-router-dom";
 import RouterApp from "./RouterApp";
