@@ -9,9 +9,9 @@ const Navigation = () => {
     return (
         <div className="header">
             <div className="headerNavi">
-                <Link to="/"><FontAwesomeIcon icon={faHome} />Home</Link>
-                <NavLink to="/about" activeClassName="selected"><FontAwesomeIcon icon={faAddressCard} />About</NavLink>
-                <NavLink to="/weather" activeClassName="selected"><FontAwesomeIcon icon={faCloud} />Weather</NavLink>
+                <Link to="/" id="Home"><FontAwesomeIcon icon={faHome} />Home</Link>
+                <NavLink to="/about" id="About" activeClassName="selected"><FontAwesomeIcon icon={faAddressCard} />About</NavLink>
+                <NavLink to="/weather" id="Weather" activeClassName="selected"><FontAwesomeIcon icon={faCloud} />Weather</NavLink>
             </div>
         </div>
     )
