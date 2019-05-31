@@ -7,7 +7,8 @@ div{
   width: 100%;
 }
 
-.title{
+.home .title{
+  margin: 0;
   text-align: center;
   background: #333333;
   color: #fff;

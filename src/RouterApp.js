@@ -2,6 +2,7 @@ import React from "react"
 import {Route} from 'react-router-dom'
 import App from "./App";
 import Weather from './Component/Weather';
+import Header from "./Header";
 
 const About =  () =>
     <div className="about">
@@ -16,6 +17,7 @@ const About =  () =>
     </div>;
 const Home = () =>
     <div className="home">
+        <Header/>
         <h1>Home</h1>
         <p className="homeDesc">
             Home 화면을 나타내는 Page 입니다.
